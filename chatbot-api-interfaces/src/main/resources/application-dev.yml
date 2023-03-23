@@ -8,14 +8,14 @@ chatbot-api:
     groupName: ChatGPT AI Robot V1
     groupId:  # 知识星球ID
     cookie:  # 知识星球个人cookie信息
-    openAiKey:  # 自行申请 https://beta.openai.com/overview 或者联系小傅哥 fustack 付费申请【购买虚拟号码等需要支付】。
+    openAiKey:  # 自行申请 https://beta.openai.com/overview
     cronExpression: 0/30 * * * * ? # 执行的频次配置，参考：cron.qqe2.com
     silenced: false
   group02:
     groupName: ChatGPT AI Robot V2
     groupId:  # 知识星球ID
     cookie:  # 知识星球个人cookie信息
-    openAiKey:  # 自行申请 https://beta.openai.com/overview 或者联系小傅哥 fustack 付费申请【购买虚拟号码等需要支付】。
+    openAiKey:  # 自行申请 https://beta.openai.com/overview
     cronExpression: 0/30 * * * * ? # 执行的频次配置，参考：cron.qqe2.com
     silenced: true
 
