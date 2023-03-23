@@ -1,0 +1,19 @@
+server:
+  port: 8080
+# 分组任务配置
+chatbot-api:
+  launchList: group01,group02 # 启动几组，就配置几组
+  group01:
+    groupName: ChatGPT AI Robot V1
+    groupId: 88885828885512 # 知识星球ID
+    cookie: zsxqsessionid=97c03173301c277ea1eac84c06b74c52; abtest_env=product; sajssdk_2015_cross_new_user=1; zsxq_access_token=CE710491-BD36-C8E6-5B0C-F3A4C539579A_A65ABE64B14CA91F; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2218709cdfbdc4a-0f45a898e2875a-7a545470-921600-18709cdfbdd7c3%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%7D%2C%22%24device_id%22%3A%2218709cdfbdc4a-0f45a898e2875a-7a545470-921600-18709cdfbdd7c3%22%2C%22identities%22%3A%22eyIkaWRlbnRpdHlfYW5vbnltb3VzX2lkIjoiMTg3MDljZGZiZGM0YS0wZjQ1YTg5OGUyODc1YS03YTU0NTQ3MC05MjE2MDAtMTg3MDljZGZiZGQ3YzMiLCIkaWRlbnRpdHlfY29va2llX2lkIjoiMTg3MDlkMTcyNGYxZDEtMGY4YzMzZjhmYTA3Yjk4LTdhNTQ1NDcwLTkyMTYwMC0xODcwOWQxNzI1MDg0OSJ9%22%2C%22history_login_id%22%3A%7B%22name%22%3A%22%22%2C%22value%22%3A%22%22%7D%7D# 知识星球个人cookie信息
+    openAiKey: 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 # 自行申请 https://beta.openai.com/overview 或者联系小傅哥 fustack 付费申请【购买虚拟号码等需要支付】。
+    cronExpression: 0/30 * * * * ? # 执行的频次配置，参考：cron.qqe2.com
+    silenced: false
+  group02:
+    groupName: ChatGPT AI Robot V2
+    groupId: 88885828885512 # 知识星球ID
+    cookie: zsxqsessionid=97c03173301c277ea1eac84c06b74c52; abtest_env=product; sajssdk_2015_cross_new_user=1; zsxq_access_token=CE710491-BD36-C8E6-5B0C-F3A4C539579A_A65ABE64B14CA91F; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2218709cdfbdc4a-0f45a898e2875a-7a545470-921600-18709cdfbdd7c3%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%7D%2C%22%24device_id%22%3A%2218709cdfbdc4a-0f45a898e2875a-7a545470-921600-18709cdfbdd7c3%22%2C%22identities%22%3A%22eyIkaWRlbnRpdHlfYW5vbnltb3VzX2lkIjoiMTg3MDljZGZiZGM0YS0wZjQ1YTg5OGUyODc1YS03YTU0NTQ3MC05MjE2MDAtMTg3MDljZGZiZGQ3YzMiLCIkaWRlbnRpdHlfY29va2llX2lkIjoiMTg3MDlkMTcyNGYxZDEtMGY4YzMzZjhmYTA3Yjk4LTdhNTQ1NDcwLTkyMTYwMC0xODcwOWQxNzI1MDg0OSJ9%22%2C%22history_login_id%22%3A%7B%22name%22%3A%22%22%2C%22value%22%3A%22%22%7D%7D# 知识星球个人cookie信息
+    openAiKey: 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 # 自行申请 https://beta.openai.com/overview 或者联系小傅哥 fustack 付费申请【购买虚拟号码等需要支付】。
+    cronExpression: 0/30 * * * * ? # 执行的频次配置，参考：cron.qqe2.com
+    silenced: true
