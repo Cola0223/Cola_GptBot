@@ -8,6 +8,7 @@
     <artifactId>Cola_GptBot</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+    <!--Maven 聚合工程 —— 子模块 -->
     <modules>
         <module>chatbot-api-application</module>
         <module>chatbot-api-domain</module>
@@ -15,6 +16,7 @@
         <module>chatbot-api-infrastructure</module>
         <module>chatbot-api-common</module>
     </modules>
+    <!--SpringBoot-->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -89,6 +91,7 @@
     </dependencyManagement>
 
     <dependencies>
+        <!--Lombok-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
